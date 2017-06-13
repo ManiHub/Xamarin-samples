@@ -3,8 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BasicControls.PickerPage">
     <ContentPage.Content>
-        <StackLayout x:Name="sl_1" Orientation="Vertical" VerticalOptions="CenterAndExpand" Padding="50,50"> 
-            <Picker x:Name="picker_1" SelectedIndexChanged="picker_1_SelectedIndexChanged"></Picker>
-        </StackLayout>
+        <ScrollView Orientation="Vertical" VerticalOptions="FillAndExpand">
+            <StackLayout x:Name="sl_1" Orientation="Vertical" VerticalOptions="CenterAndExpand" Padding="50,50">
+                <Picker x:Name="picker_1" SelectedIndex="0" SelectedIndexChanged="picker_1_SelectedIndexChanged"></Picker>
+                <Label x:Name="lb_1"></Label>
+                <Image x:Name="img_1"></Image>
+                <StackLayout x:Name="sl_2" Orientation="Vertical" VerticalOptions="CenterAndExpand">
+                    <Label Text="Enter the item you want to add to the list"></Label>
+                    <Entry x:Name="entry_1"></Entry>
+                    <Button Clicked="Button_Clicked" Text="Click to Add"></Button>
+                    <Picker x:Name="picker_2" SelectedIndex="0"></Picker>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

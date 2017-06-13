@@ -41,42 +41,36 @@ namespace BasicControls
             try
             {
                 int itemselected = picker_1.SelectedIndex;
-                Image img = null;
-                Label lb = null;
-
+                
                 switch (itemselected)
                 {
                     case 0:
-                        img = new Image();
-                        lb = new Label();
-                        img.Source = "";
-                        lb.Text = "Apple";
+                        this.img_1.Source = "Images/apple.png";
+                        this.lb_1.Text = "Apple";
                         break;
                     case 1:
-                        img = new Image();
-                        lb = new Label();
-                        img.Source = "";
-                        lb.Text = "Mango";
+                        img_1.Source = "Images/mango.png";
+                        lb_1.Text = "Mango";
                         break;
                     case 2:
-                        img = new Image();
-                        lb = new Label();
-                        img.Source = "";
-                        lb.Text = "Graphs";
+                        img_1.Source = "Images/grapes.png";
+                        lb_1.Text = "Graphs";
                         break;
                     default:
                         break;
                 }
                 
-                if(img!=null && lb != null)
-                {
-                    sl_1.Children.Add(img);
-                    sl_1.Children.Add(lb);
-                }
-
             }catch(Exception exp)
             {
 
+            }
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            if (entry_1.Text != null && entry_1.Text.ToString().Length > 0)
+            {
+                picker_2.Items.Add(entry_1.Text.ToString());
             }
         }
     }

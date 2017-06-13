@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BasicControls.HamBurgerPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid Padding="50,50">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <RelativeLayout Grid.Row="0" Grid.Column="0">
+                    <Button x:Name="HamburgerButton" FontFamily="Segoe MDL2 Assets" Text="&#xE700;"/>
+                </RelativeLayout>
+
+                <Grid Grid.Row="1" Grid.Column="0">
+                    <StackLayout>
+                        <Label Text="Hello"></Label>
+                        <Label Text="Hello"></Label>
+                        <Label Text="Hello"></Label>
+                        <Label Text="Hello"></Label>
+                        <Label Text="Hello"></Label>
+                    </StackLayout>
+                </Grid>
+                
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

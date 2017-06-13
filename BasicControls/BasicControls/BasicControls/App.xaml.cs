@@ -13,7 +13,7 @@ namespace BasicControls
 		{
 			InitializeComponent();
 
-            MainPage = new PickerPage();
+            MainPage = new HamBurgerPage();
 		}
 
 		protected override void OnStart ()
